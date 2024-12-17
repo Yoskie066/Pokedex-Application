@@ -1,0 +1,132 @@
+header {
+  background-color: #000066;
+  padding: 0.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+header nav img {
+  width: 150px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  max-width: 600px;
+  width: 50%;
+
+}
+
+.search-container input {
+  flex-grow: 1; 
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: white;
+}
+
+.search-container button {
+  padding: 10px 15px;
+  background-color: gold;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  font-size: 1rem;
+  white-space: nowrap; 
+}
+
+/*Desktop */
+@media screen and (max-width: 1024px) {
+  header nav {
+    gap: 1rem;
+  }
+
+  header nav img {
+    width: 120px;
+  }
+
+  .search-container input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .search-container button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
+
+/*Tablet */
+@media screen and (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  header nav img {
+    width: 100px;
+  }
+
+  .search-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    margin: 0 1rem; 
+  }
+
+  .search-container input {
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .search-container button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  header nav img {
+    width: 80px;
+  }
+
+  .search-container {
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .search-container input {
+    width: 100%;
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  .search-container button {
+    width: 100%;
+    font-size: 0.85rem;
+    padding: 8px 10px;
+  }
+}

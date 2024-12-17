@@ -1,0 +1,48 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  box-sizing: border-box; 
+  background-color: #f4f4f4;
+}
+
+.card:hover {
+  background-color:gold;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.pokeId {
+  color: black;
+  font-size: 1rem;
+}
+
+.type-container {
+  margin-top: 1rem;
+}
+
+
+  
+  
